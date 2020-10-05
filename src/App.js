@@ -71,7 +71,7 @@ export default function App() {
         let newLocY = temp[1] + obj[direction][1];
         outputObj.step.push(index + 2);
         outputObj.action.push(direction);
-        //todo add max w and h
+
         if (
           newLocX >= 0 &&
           newLocX <= roomDimensions[0] &&
@@ -112,14 +112,14 @@ export default function App() {
           Drop files here or click to upload
         </Files>
         <Button
-          class="btn btn-secondary"
+          className="btn btn-success"
           style={{ margin: "10px 10px 10px 10px" }}
           onClick={handleSubmit}
         >
           Generate
         </Button>
         <Button
-          class="btn btn-warning"
+          className="btn btn-warning"
           style={{ margin: "10px 10px 10px 10px" }}
           onClick={() => {
             setInput({});
